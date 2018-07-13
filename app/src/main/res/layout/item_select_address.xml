@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackgroundBorderless"
+    android:paddingLeft="@dimen/margin16dp"
+    android:paddingRight="@dimen/margin16dp"
+    android:paddingTop="@dimen/margin8dp">
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rb_checked"
+        android:layout_toStartOf="@+id/rb_checked"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_short_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/margin4dp"
+            android:paddingTop="@dimen/margin4dp"
+            android:textColor="@color/grey_9"
+            android:textSize="16sp"
+            tools:text="SAmple" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/margin4dp"
+            android:paddingTop="@dimen/margin4dp"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            tools:text="SAmple" />
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/rb_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_address"
+        android:layout_marginTop="@dimen/margin4dp"
+        android:background="@color/clouds" />
+</RelativeLayout>

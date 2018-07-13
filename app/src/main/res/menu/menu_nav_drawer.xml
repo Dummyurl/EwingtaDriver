@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_user"
+        android:visible="false"
+        android:title="@string/profile" />
+
+
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share" />
+
+    <item
+        android:id="@+id/action_contact_us"
+        android:icon="@drawable/ic_support"
+        android:title="@string/contact_us" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+</menu>

@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "976577573107",
+    "firebase_url": "https://domestic-logistic.firebaseio.com",
+    "project_id": "domestic-logistic",
+    "storage_bucket": "domestic-logistic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976577573107:android:b611cdc15816a413",
+        "android_client_info": {
+          "package_name": "ewingta.domesticlogistic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976577573107-rsnc1san55kbd2fc9l8el4qme3l7d7vq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ewingta.domesticlogistic",
+            "certificate_hash": "6af432a4dcc01bc309af253590b907603045fbce"
+          }
+        },
+        {
+          "client_id": "976577573107-hlmt428p0gkbjsrj7moi0ckhhvf03p85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzvAcdE5g_31bmzegt5LvRaALBx-JRe5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976577573107-hlmt428p0gkbjsrj7moi0ckhhvf03p85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976577573107:android:420ec059e555a4c8",
+        "android_client_info": {
+          "package_name": "ewingta.domesticlogistic.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976577573107-hlmt428p0gkbjsrj7moi0ckhhvf03p85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzvAcdE5g_31bmzegt5LvRaALBx-JRe5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

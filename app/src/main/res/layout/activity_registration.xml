@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".driver.activities.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/iv_truck"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_truck" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin16dp"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/registration"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/mobile_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black" />
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:padding="@dimen/margin8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/margin16dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_rectangle_yellow"
+                android:text="@string/register"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

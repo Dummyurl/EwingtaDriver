@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+def gitTag = 1.0
+def gitCommitCount = 0
+
+ext {
+    appVersionName = '1.0'
+    appPackageId = 'ewingta.domesticlogistic'
+}
+
+android {
+    compileSdkVersion 27
+    flavorDimensions "default"
+    defaultConfig {
+        applicationId "ewingta.domesticlogistic.driver"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode gitCommitCount
+        versionName "$gitTag.$gitCommitCount"
+        vectorDrawables.useSupportLibrary = false
+        multiDexEnabled true
+    }
+
+    productFlavors {
+        dvl {
+            versionName "$appVersionName"
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.name}-$gitTag.$gitCommitCount .apk"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'domesticlogisticdriver'
+            keyPassword 'domesticlogisticdriver'
+            storeFile file('../artifacts/domesticlogisticdriver.jks"')
+            storePassword 'domesticlogisticdriver'
+        }
+    }
+
+    buildTypes {
+        debug {
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.google.firebase:firebase-core:15.0.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.2'
+
+    implementation 'pub.devrel:easypermissions:1.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+}
+apply plugin: 'com.google.gms.google-services'

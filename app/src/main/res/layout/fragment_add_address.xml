@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@android:color/black"
+        android:padding="@dimen/margin16dp">
+
+
+        <EditText
+            android:id="@+id/et_short_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/short_name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black" />
+
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_short_name"
+            android:layout_marginBottom="@dimen/margin16dp"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_address"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:fontFamily="sans-serif-condensed"
+            android:foreground="?selectableItemBackground"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/margin8dp"
+            android:paddingLeft="@dimen/margin16dp"
+            android:paddingRight="@dimen/margin16dp"
+            android:paddingTop="@dimen/margin8dp"
+            android:text="@string/add_address"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>
