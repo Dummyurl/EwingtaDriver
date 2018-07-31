@@ -18,7 +18,6 @@ import java.util.List;
 import ewingta.domesticlogistic.driver.MainActivity;
 import ewingta.domesticlogistic.driver.R;
 import ewingta.domesticlogistic.driver.listeners.SmsListener;
-import ewingta.domesticlogistic.driver.models.Area;
 import ewingta.domesticlogistic.driver.models.City;
 import ewingta.domesticlogistic.driver.models.LoginResponse;
 import ewingta.domesticlogistic.driver.receivers.SmsReceiver;

@@ -13,6 +13,7 @@ import ewingta.domesticlogistic.driver.models.PriceResponse;
 import ewingta.domesticlogistic.driver.models.RegisterResponse;
 import ewingta.domesticlogistic.driver.models.ServiceResponse;
 import ewingta.domesticlogistic.driver.models.TimeResponse;
+import ewingta.domesticlogistic.driver.models.VerifyResponse;
 import ewingta.domesticlogistic.driver.utils.URLsUtil;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -77,4 +78,7 @@ public interface RetrofitService {
 
     @GET(URLsUtil.PRICE_URL)
     Call<PriceResponse> getPrice(@Query("ordernumber") String ordernumber);
+
+    @GET(URLsUtil.VERIFYOTP_URL)
+    Call<VerifyResponse> otpverifyActivation(@Query("userid") String userid, @Query("otp") String otp);
 }

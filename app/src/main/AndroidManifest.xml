@@ -64,6 +64,10 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".activities.CityActivity"
             android:label="@string/select_city" />
+
+     <activity android:name=".activities.VerifyOTPActivty"
+         android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

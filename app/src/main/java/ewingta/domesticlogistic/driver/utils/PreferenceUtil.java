@@ -5,9 +5,9 @@ import android.preference.PreferenceManager;
 
 import com.google.gson.Gson;
 
-import ewingta.domesticlogistic.driver.models.Area;
 import ewingta.domesticlogistic.driver.models.City;
 import ewingta.domesticlogistic.driver.models.LoginResponse;
+import ewingta.domesticlogistic.driver.models.VerifyResponse;
 
 /**
  * Created by FAMILY on 14-12-2017.
@@ -30,6 +30,12 @@ public class PreferenceUtil {
         String userDetails = new Gson().toJson(loginResponse);
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString("user_details", userDetails).apply();
     }
+
+    public static void setVerifyUserDetails(Context context, VerifyResponse verifyResponse) {
+        String userDetails = new Gson().toJson(verifyResponse);
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putString("user_details", userDetails).apply();
+    }
+
 
     public static void setCity(Context context, City city) {
         String cityString = new Gson().toJson(city);

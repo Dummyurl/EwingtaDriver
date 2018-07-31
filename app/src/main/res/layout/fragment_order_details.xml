@@ -6,6 +6,15 @@
     android:orientation="vertical"
     android:padding="@dimen/margin16dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="PickUp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -26,6 +35,127 @@
 
         <TextView
             android:id="@+id/tv_customer_name"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="left"
+            android:hint="@string/customer_name"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:text="@string/customer_number"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/putv_customer_phone"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/ic_rectangle_white"
+            android:gravity="center_vertical|start"
+            android:hint="@string/customer_number"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:text="@string/pick_up"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/putv_pick_up"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_rectangle_white"
+            android:hint="@string/pick_up"
+            android:maxLines="1"
+            android:padding="@dimen/margin8dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Drop"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:text="@string/customer_name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/putv_customer_name"
             android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -121,40 +251,7 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_weight="2"
-            android:padding="10dp"
-            android:text="@string/pick_up"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_pick_up"
-            android:layout_width="226dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="3dp"
-            android:layout_weight="1"
-            android:background="@drawable/ic_rectangle_white"
-            android:hint="@string/pick_up"
-            android:maxLines="1"
-            android:padding="@dimen/margin8dp"
-            android:textColor="@android:color/black"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="3dp" />
-
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -238,8 +335,8 @@
 
 
         <TextView
-            android:id="@+id/tv_completed"
-            android:layout_width="104dp"
+            android:id="@+id/otptv_completed"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/margin24dp"
@@ -257,13 +354,13 @@
             android:paddingLeft="@dimen/margin16dp"
             android:paddingRight="@dimen/margin16dp"
             android:paddingTop="@dimen/margin8dp"
-            android:text="@string/status"
+            android:text="@string/otp"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_status"
-            android:layout_width="108dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"

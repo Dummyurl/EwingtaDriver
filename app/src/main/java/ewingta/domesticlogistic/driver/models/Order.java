@@ -39,6 +39,28 @@ public class Order {
     private String time_id;
     private String retailer_id;
     private String installation_time;
+    private String drop_name;
+    private String drop_phone;
+
+    public String getDrop_name ()
+    {
+        return drop_name;
+    }
+
+    public void setDrop_name (String drop_name)
+    {
+        this.drop_name = drop_name;
+    }
+    public String getDrop_phone ()
+    {
+        return drop_phone;
+    }
+
+    public void setDrop_phone (String drop_phone)
+    {
+        this.drop_phone = drop_phone;
+    }
+
 
     public String getService_id() {
         return service_id;
