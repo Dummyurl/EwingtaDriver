@@ -3,6 +3,7 @@ package ewingta.domesticlogistic.driver.fragment;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetDialogFragment;
@@ -64,6 +65,17 @@ public class OrderDetailsFragment extends BottomSheetDialogFragment {
         putv_customer_phone.setText(order.getCustomer_phone());
         putv_pick_up.setText(order.getCustomer_address());
 
+        tv_customer_phone.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:8520083022"));
+                startActivity(intent);
+            }
+        });
+
         tv_Otp.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -73,14 +85,14 @@ public class OrderDetailsFragment extends BottomSheetDialogFragment {
             }
         });
 
-        tv_status.setOnClickListener(new View.OnClickListener()
+      /*  tv_status.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-
+                startActivity(new Intent(getContext(), StartRideActivity.class));
             }
-        });
+        });*/
 
         dialog.setContentView(contentView);
     }

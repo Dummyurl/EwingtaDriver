@@ -38,5 +38,10 @@ public class URLsUtil {
     public static final String PRICE_URL = INDEX_GET_URL + "&resource=getpricea";
 
     public static final String VERIFYOTP_URL =INDEX_GET_URL + "&resource=otpsendtodriver";
+
+    public static final String STARTRIDE_URL =INDEX_GET_URL + "&resource=startride";
+
+
+
 }
 

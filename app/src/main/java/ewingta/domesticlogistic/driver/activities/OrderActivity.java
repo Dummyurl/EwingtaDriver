@@ -164,7 +164,7 @@ public class OrderActivity extends BaseActivity implements OnMapReadyCallback, V
             });
 
 
-            Address address = getLocationFromAddress(order.getLocation());
+            Address address = getLocationFromAddress(order.getLocation_id());
 
             if (address != null) {
                 MarkerOptions markerOptions = new MarkerOptions().position(new LatLng(address.getLatitude(), address.getLongitude())).icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_gift));
@@ -289,7 +289,7 @@ public class OrderActivity extends BaseActivity implements OnMapReadyCallback, V
     @Override
     public void onLocationChanged(Location location) {
         if (!routeShown) {
-            Address address = getLocationFromAddress(order.getLocation());
+            Address address = getLocationFromAddress(order.getLocation_id());
 
             if (address != null) {
                 String url = getRequestUrl(new LatLng(address.getLatitude(), address.getLongitude()), new LatLng(location.getLatitude(), location.getLongitude()));

@@ -100,7 +100,7 @@
     <string name="order_details">Order Details</string>
     <string name="order_type">Order Type</string>
     <string name="customer_name">Customer Name</string>
-    <string name="customer_number">Customer Number</string>
+    <string name="customer_number">Customer No</string>
     <string name="pick_up">Pickup</string>
     <string name="delivery">Delivery</string>
     <string name="order_size">Order Size</string>

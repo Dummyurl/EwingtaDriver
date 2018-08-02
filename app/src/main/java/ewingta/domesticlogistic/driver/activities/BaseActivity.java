@@ -17,7 +17,8 @@ public class BaseActivity extends AppCompatActivity {
 
     private static final String TAG = BaseActivity.class.getSimpleName();
 
-    public void showInfoToast(int msg) {
+    public void showInfoToast(int msg)
+    {
         ToastUtil.showInfo(this, msg);
     }
 
